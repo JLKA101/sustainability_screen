@@ -1,0 +1,40 @@
+body {
+    background-color:beige;
+}
+.explain {
+   font-family: serif;
+   text-align: left;
+}
+.column img {
+    width: 100%;
+    filter: grayscale(80%);
+}
+.column img:hover {
+    filter: none;
+}
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+.column {
+    flex: 33.3%;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1200px) {
+    .column {
+        flex: 33.3%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .column {
+        flex: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 75%;
+    }
+}
